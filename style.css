@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Norse;
+    src: url('./assest/Norse-Bold.otf');
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    width: 60%;
+    height: 100vh;
+    background-color: #f9fafb;
+}
+
+.banner {
+    display: flex;
+    width: 40vw;
+    background-image: url('./assest/img/desktop-wallpaper-stunning-one-piece-android-for.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 15vh;
+    top: 20vh;
+    width: 100%;
+    gap: 2vw;
+    background-color: rgba(0,0,0,0.7);
+}
+
+img{
+    height: 10vh;
+}
+
+.text{
+    font-family: Norse;
+    font-size: 3rem;
+    color: #EEEEEE;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    color: #000000;
+}
+
+.description{
+    width: 85%;
+    margin-bottom: 80px;
+}
+
+.description p,
+form p,
+.btn {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+form{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form p {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+label{
+    margin-bottom: 3px;
+}
+
+input{
+    padding: 5px;
+    border: 1px solid #A7A9B0;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #000000;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid brown;
+}
+
+.btn {
+    width: 100%;
+    outline: none;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    cursor: pointer;
+    color: #f9fafb;
+    margin-bottom: 15px;
+}
+
+.act {
+    font-size: 17px;
+}
+
+a{
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width:767px){
+    main{
+        height: auto;
+    }
+
+    section{
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .banner{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo{
+        position: static;
+    }
+
+    .right-side{
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .description{
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    form{
+        width: 100%;
+        justify-content: space-between;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .input{
+        margin-right: 0px;
+    }
+}
+
+@media (max-width:400px){
+    form{
+        justify-content: center;
+    }
+}
